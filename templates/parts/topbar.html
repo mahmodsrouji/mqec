@@ -1,0 +1,54 @@
+<!-- Topbar Start -->
+<div class="container-fluid fixed-top">
+    <!-- Top Contact Bar -->
+    <div class="container topbar d-none d-lg-block">
+        <div class="topbar-inner">
+            <div class="row gx-0">
+                <div class="col-lg-7 text-start">
+                    <div class="h-100 d-inline-flex align-items-center me-4">
+                        <span class="fa fa-phone-alt me-2 text-dark"></span>
+                        <a href="tel:+0123456789" class="text-secondary"><span>+012 345 6789</span></a>
+                    </div>
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="far fa-envelope me-2 text-dark"></span>
+                        <a href="mailto:info@example.com" class="text-secondary"><span>info@example.com</span></a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-end">
+                    <div class="h-100 d-inline-flex align-items-center">
+                        <span class="text-body">Follow Us:</span>
+                        <a class="text-dark px-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a class="text-dark px-2" href="#"><i class="fab fa-twitter"></i></a>
+                        <a class="text-dark px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a class="text-dark px-2" href="#"><i class="fab fa-instagram"></i></a>
+                        <a class="text-body ps-4" href="#"><i class="fa fa-lock text-dark me-1"></i> Signup/login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Main Navigation Bar -->
+    <div class="container">
+        <nav class="navbar navbar-light navbar-expand-lg py-3">
+            <a href="{% url 'masjid_quba' %}" class="navbar-brand">
+                <h1 class="mb-0">Masjid<span class="custom-color-heading">al-Quba</span></h1>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars text-primary"></span>
+            </button>
+            <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                <div class="navbar-nav ms-lg-auto mx-xl-auto">
+                    <!-- Five Navigation Links -->
+                    <a href="{% url 'masjid_quba' %}" class="nav-item nav-link active">Masjid Quba</a>
+                    <a href="{% url 'ramadan' %}" class="nav-item nav-link">Ramadan</a>
+                    <a href="{% url 'new_muslims_correction' %}" class="nav-item nav-link">New Muslims (correction)</a>
+                    <a href="{% url 'new_muslims' %}" class="nav-item nav-link">New Muslims</a>
+                    <a href="{% url 'about' %}" class="nav-item nav-link">About us</a>
+                </div>
+                <!-- Donate button remains separate -->
+                <a href="{% url 'donate' %}" class="btn btn-primary py-2 px-4 d-none d-xl-inline-block">Donate</a>
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- Topbar End -->
