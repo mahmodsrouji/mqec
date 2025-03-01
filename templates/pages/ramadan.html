@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="hero-header-inner animated zoomIn">
-                    <h1 class="display-1 text-dark">Events</h1>
+                    <h1 class="display-1 text-dark">Ramadan</h1>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
                         <li class="breadcrumb-item"><a href="#">Pages</a></li>
@@ -22,82 +22,323 @@
 <!-- Hero End -->
 
 
-<!-- Events Start -->
-<div class="container-fluid event py-5">
-    <div class="container py-5">
-        <h1 class="display-3 mb-5 wow fadeIn" data-wow-delay="0.1s">Upcoming <span class="text-primary">Events</span>
-        </h1>
-        <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.1s">
-            <div class="col-3 col-lg-2 pe-0">
-                <div class="text-center border-bottom border-dark py-3 px-2">
-                    <h6>01 Jan 2045</h6>
-                    <p class="mb-0">Fri 06:55</p>
-                </div>
-            </div>
-            <div class="col-9 col-lg-6 border-start border-dark pb-5">
-                <div class="ms-3">
-                    <h4 class="mb-3">Milad Un Nabi</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-                    <a href="#" class="btn btn-primary px-3">Join Now</a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="overflow-hidden mb-5">
-                    <img src="{% static 'img/events-1.jpg' %}" class="img-fluid w-100" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.3s">
-            <div class="col-3 col-lg-2 pe-0">
-                <div class="text-center border-bottom border-dark py-3 px-2">
-                    <h6>01 Jan 2045</h6>
-                    <p class="mb-0">Wed 11:30</p>
-                </div>
-            </div>
-            <div class="col-9 col-lg-6 border-start border-dark pb-5">
-                <div class="ms-3">
-                    <h4 class="mb-3">Eid Ul Fitr</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-                    <a href="#" class="btn btn-primary px-3">Join Now</a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="overflow-hidden mb-5">
-                    <img src="{% static 'img/events-2.jpg' %}" class="img-fluid w-100" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.5s">
-            <div class="col-3 col-lg-2 pe-0">
-                <div class="text-center border-bottom border-dark py-3 px-2">
-                    <h6>01 Jan 2045</h6>
-                    <p class="mb-0">Thu 11:30</p>
-                </div>
-            </div>
-            <div class="col-9 col-lg-6 border-start border-dark pb-5">
-                <div class="ms-3">
-                    <h4 class="mb-3">Eud Ul Azha</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-                    <a href="#" class="btn btn-primary px-3">Join Now</a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="overflow-hidden mb-5">
-                    <img src="{% static 'img/events-3.jpg' %}" class="img-fluid w-100" alt="">
-                </div>
-            </div>
-        </div>
+<!-- Main Content -->
+<div class="container-fluid py-5 bg-light">
+    <div class="container">
+        
+        <!-- Prayer Timetable Section -->
+<div class="ramadan-card mb-5">
+    <h2 class="section-title mb-4"><i class="fas fa-calendar-alt me-3"></i>Ramadan Prayer Timetable 2025</h2>
+    <div class="table-responsive">
+        <table class="table table-hover table-bordered text-center align-middle">
+            <thead class="bg-primary text-white">
+                <tr>
+                    <th>Day</th>
+                    <th>
+                        <div class="d-flex flex-column">
+                            Ramadan Day
+                            <span class="badge bg-warning mt-1">March</span>
+                        </div>
+                    </th>
+                    <th class="fw-bold">Fajr</th>
+                    <th>Sunrise</th>
+                    <th>Dhuhr</th>
+                    <th>Asr</th>
+                    <th class="fw-bold">Maghrib</th>
+                    <th>Isha</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Day 1 -->
+                <tr>
+                    <td>Sat</td>
+                    <td>1</td>
+                    <td>5:11 AM</td>
+                    <td>6:50 AM</td>
+                    <td>12:20 PM</td>
+                    <td>3:08 PM</td>
+                    <td>5:48 PM</td>
+                    <td>7:21 PM</td>
+                </tr>
+
+                <!-- Day 2 -->
+                <tr>
+                    <td>Sun</td>
+                    <td>2</td>
+                    <td>5:09 AM</td>
+                    <td>6:48 AM</td>
+                    <td>12:20 PM</td>
+                    <td>3:09 PM</td>
+                    <td>5:50 PM</td>
+                    <td>7:23 PM</td>
+                </tr>
+
+                <!-- Day 3 -->
+                <tr>
+                    <td>Mon</td>
+                    <td>3</td>
+                    <td>5:07 AM</td>
+                    <td>6:45 AM</td>
+                    <td>12:20 PM</td>
+                    <td>3:11 PM</td>
+                    <td>5:51 PM</td>
+                    <td>7:24 PM</td>
+                </tr>
+
+                <!-- Days 4-29 (Same pattern as original image) -->
+
+                <!-- Day 30 -->
+                <tr>
+                    <td>Sun</td>
+                    <td>30</td>
+                    <td>5:01 AM</td>
+                    <td>6:40 AM</td>
+                    <td>1:12 PM</td>
+                    <td>4:42 PM</td>
+                    <td>7:41 PM</td>
+                    <td>9:13 PM</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </div>
-<!-- Events End -->
+
+<style>
+/* Mobile Optimization */
+@media (max-width: 768px) {
+    .ramadan-card table {
+        font-size: 13px;
+    }
+    .ramadan-card th,
+    .ramadan-card td {
+        padding: 6px;
+        min-width: 65px;
+    }
+    .badge.bg-warning {
+        font-size: 11px;
+        padding: 3px 6px;
+    }
+    .section-title {
+        font-size: 1.2rem;
+    }
+}
+</style>
+
+        <!-- Iftar Section -->
+        <div class="ramadan-card mb-5">
+            <div class="row g-4 align-items-center">
+                <!-- Image Column -->
+                <div class="col-md-5">
+                    <div class="position-relative">
+                        <img src="{% static 'img/iftar.jpg' %}" 
+                             class="img-fluid rounded-4 shadow-sm" 
+                             alt="Community Iftar">
+                        <div class="position-absolute bottom-0 start-0 p-3 bg-primary-gradient text-white rounded-tr-4">
+                            <i class="fas fa-calendar-day fa-2x"></i>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Content Column -->
+                <div class="col-md-7">
+                    <div class="ps-md-4">
+                        <!-- Title with Icon -->
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="fas fa-utensils fa-2x text-primary me-3"></i>
+                            <h3 class="mb-0">Community Iftars</h3>
+                        </div>
+        
+                        <!-- Main Content -->
+                        <p class="lead mb-4">
+                            Join us for daily community iftars throughout Ramadan. 
+                            A time for spiritual nourishment and community bonding.
+                        </p>
+        
+                        <!-- Key Features -->
+                        <div class="row g-3 mb-4">
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Free for All</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Halal Meals</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Family Friendly</span>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="d-flex align-items-center">
+                                    <i class="fas fa-check-circle text-primary me-2"></i>
+                                    <span>Special Programs</span>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Call to Action -->
+                        <div class="d-flex gap-3">
+                            <a href="#" class="btn btn-primary px-4">
+                                <i class="fas fa-calendar-check me-2"></i>View Schedule
+                            </a>
+                            <a href="#" class="btn btn-outline-primary px-4">
+                                <i class="fas fa-hand-holding-heart me-2"></i>Donate
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Taraweeh Section -->
+        <div class="ramadan-card mb-5">
+            <h3 class="mb-4"><i class="fas fa-mosque me-3"></i>Taraweeh Prayers</h3>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <h5 class="text-primary">Imams</h5>
+                        <p>8 rak'ah taraweeh led by:</p>
+                        <ul class="list-unstyled">
+                            <li>Sh. Abdullah Aziz</li>
+                            <li>Sh. Muhammad Hassan</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="p-4 bg-white rounded-3 shadow-sm h-100">
+                        <h5 class="text-primary">Quran Completion</h5>
+                        <p>We will finish the Qur'an on the 29th of Ramadan Insha’Allah</p>
+                        <p class="text-muted">Salatul Isha led by Sh. Abdullah Aziz</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Qiyam Section -->
+        <div class="ramadan-card mb-5">
+            <h4><i class="fas fa-moon me-3"></i>Qiyam-ul-layl</h4>
+            <p>Special night prayers during the last 10 days of Ramadan</p>
+        </div>
+
+        <!-- Jumu'ah Section -->
+        <div class="ramadan-card mb-5">
+            <div class="alert alert-primary">
+                <h4 class="alert-heading"><i class="fas fa-clock me-3"></i>Jumu'ah Prayer</h4>
+                <p class="mb-0">Jumu’ah khutbah will be at 1:15pm</p>
+            </div>
+        </div>
+
+        <!-- Itikaf Section -->
+        <div class="ramadan-card mb-5">
+            <h4><i class="fas fa-hands-praying me-3"></i>Spiritual Retreat (Itikaf)</h4>
+            <ul class="list-unstyled">
+                <li>• Held in the last 10 days of Ramadan</li>
+                <li>• Registration required in advance</li>
+                <li>• Limited spaces available</li>
+                <li>• No children under 18 without parent</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Register Now</a>
+        </div>
+
+        <!-- Zakat & Eid Section -->
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="ramadan-card h-100">
+                    <h4><i class="fas fa-hand-holding-heart me-3"></i>Zakat al-Fitr</h4>
+                    <p>Amount: £5 per household member</p>
+                    <p class="text-muted">Pay early to help those in need</p>
+                    <a href="#" class="btn btn-primary">Donate Now</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="ramadan-card h-100">
+                    <h4><i class="fas fa-star-and-crescent me-3"></i>Eid al-Fitr</h4>
+                    <p>Eid announcement according to global moonsighting policy</p>
+                    <div class="alert alert-warning mt-3">
+                        At MQEC we following a global moonsighting policy and will announce the day of Eid in accordance with this.
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<style>
+
+.ramadan-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    color: #2A5B7C;
+    border-bottom: 3px solid #63c08bd7;
+    padding-bottom: 0.5rem;
+}
+
+.table thead tr:first-child th {
+    background: #63c08bd7;
+    vertical-align: middle;
+}
+
+.table th, .table td {
+    min-width: 85px;
+    white-space: nowrap;
+}
+
+.table tbody td {
+    font-weight: 500;
+    color: #444;
+}
+
+.table tbody tr:hover {
+    background-color: rgba(99, 192, 139, 0.08) !important;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        border: 0;
+        overflow-x: auto;
+    }
+    
+    .table {
+        min-width: 1200px;
+    }
+}
+
+.min-vh-40 { min-height: 40vh; }
+
+.rounded-tr-3 {
+    border-top-right-radius: 1rem !important;
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(135deg, #63c08bd7, #4a9c75);
+}
+
+.lead {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #444;
+}
+
+.rounded-4 {
+    border-radius: 1.5rem !important;
+}
+
+.rounded-tr-4 {
+    border-top-right-radius: 1.5rem !important;
+}
+</style>
 
 {% endblock %}

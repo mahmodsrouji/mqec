@@ -8,11 +8,11 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="hero-header-inner animated zoomIn">
-                    <h1 class="display-1 text-dark">Testimonial</h1>
+                    <h1 class="display-1 text-dark">New Muslims</h1>
                     <ol class="breadcrumb mb-0">
                         <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
-                        <li class="breadcrumb-item text-dark" aria-current="page">Testimonial</li>
+                        <li class="breadcrumb-item"><a href="#">Resources</a></li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">New Muslims</li>
                     </ol>
                 </div>
             </div>
@@ -21,122 +21,197 @@
 </div>
 <!-- Hero End -->
 
-
-<!-- Testiminial Start -->
-<div class="container-fluid testimonial py-5">
+<!-- Main Content -->
+<div class="container-fluid py-5 bg-light">
     <div class="container py-5">
-        <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            <p class="fs-5 text-uppercase text-primary">Testimonial</p>
-            <h1 class="display-3">What People Say About Islam</h1>
+        <!-- Introduction Section -->
+        <div class="row g-5 align-items-center mb-5 wow fadeIn">
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1587617425953-9075d28b8c46?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                     class="img-fluid rounded-3 shadow" 
+                     alt="Islamic Learning">
+            </div>
+            <div class="col-lg-6">
+                <h2 class="display-5 mb-4">Welcome to Our Community</h2>
+                <p class="lead text-muted">
+                    We are here to support the journey of individuals from the stage at,
+                     which they first come across Islam, to taking the Shahadah,
+                      to supporting them until they become fully integrated into the community.
+                </p>
+            </div>
         </div>
-        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.1s">
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-1.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
-                        </div>
+
+        <!-- Services Grid -->
+        <div class="row g-4 mb-5">
+            <!-- How to Pray -->
+            <div class="col-md-6 col-lg-4 wow zoomIn">
+                <div class="service-card bg-white p-4 rounded-3 shadow-sm h-100">
+                    <div class="icon-wrapper mb-3">
+                        <i class="fas fa-pray fa-2x text-success"></i>
                     </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
+                    <h3 class="h4 fw-bold mb-3">How to Pray</h3>
+                    <p class="text-muted">Step-by-step guidance for performing Salah</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Wudu demonstration
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Prayer times management
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-2.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
-                        </div>
+
+            <!-- Worship Basics -->
+            <div class="col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.1s">
+                <div class="service-card bg-white p-4 rounded-3 shadow-sm h-100">
+                    <div class="icon-wrapper mb-3">
+                        <i class="fas fa-mosque fa-2x text-success"></i>
                     </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
+                    <h3 class="h4 fw-bold mb-3">Worship Basics</h3>
+                    <p class="text-muted">Fundamentals of Islamic worship</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Pillars of Islam
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Daily supplications
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-3.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
-                        </div>
+
+            <!-- Quran Class -->
+            <div class="col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.2s">
+                <div class="service-card bg-white p-4 rounded-3 shadow-sm h-100">
+                    <div class="icon-wrapper mb-3">
+                        <i class="fas fa-book-open fa-2x text-success"></i>
                     </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
+                    <h3 class="h4 fw-bold mb-3">Quran Recitation</h3>
+                    <p class="text-muted">Learn proper Tajweed rules</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Arabic alphabet
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Basic recitation
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-4.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
+
+            <!-- Study Circle -->
+            <div class="col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.3s">
+                <div class="service-card bg-white p-4 rounded-3 shadow-sm h-100">
+                    <div class="icon-wrapper mb-3">
+                        <i class="fas fa-users fa-2x text-success"></i>
+                    </div>
+                    <h3 class="h4 fw-bold mb-3">Study Circle</h3>
+                    <p class="text-muted">Weekly knowledge sessions</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Quranic studies
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Prophetic traditions
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Social Gatherings -->
+            <div class="col-md-6 col-lg-4 wow zoomIn" data-wow-delay="0.4s">
+                <div class="service-card bg-white p-4 rounded-3 shadow-sm h-100">
+                    <div class="icon-wrapper mb-3">
+                        <i class="fas fa-handshake fa-2x text-success"></i>
+                    </div>
+                    <h3 class="h4 fw-bold mb-3">Social Gatherings</h3>
+                    <p class="text-muted">Community integration events</p>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Monthly meetings
+                        </li>
+                        <li class="mb-2">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            Cultural exchange
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="row g-5 mt-5 wow fadeIn">
+            <div class="col-lg-6">
+                <div class="bg-primary-gradient p-5 rounded-3 h-100">
+                    <h3 class="text-white mb-4">Get Started Today</h3>
+                    <div class="d-flex align-items-center mb-4">
+                        <i class="fas fa-user-graduate fa-2x text-white me-3"></i>
+                        <div>
+                            <h5 class="text-white">Personal Mentorship</h5>
+                            <p class="text-white mb-0">One-on-one guidance program</p>
                         </div>
                     </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
+                    <div class="d-flex align-items-center">
+                        <i class="fas fa-envelope fa-2x text-white me-3"></i>
+                        <div>
+                            <h5 class="text-white">Contact Us</h5>
+                            <a href="mailto:info@mqec.org.uk" class="text-white">info@mqec.org.uk</a>
+                        </div>
                     </div>
                 </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
-                </div>
+            </div>
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                     class="img-fluid rounded-3 shadow" 
+                     alt="Community Support">
             </div>
         </div>
     </div>
 </div>
-<!-- Testiminial End -->
+
+<style>
+.service-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid rgba(99, 192, 139, 0.15);
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    border-color: rgba(99, 192, 139, 0.3);
+}
+
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background: rgba(99, 192, 139, 0.1);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-primary-gradient {
+    background: linear-gradient(135deg, var(--bs-primary), #63c08bd7);
+}
+
+.rounded-3 {
+    border-radius: 1rem !important;
+}
+
+.list-unstyled li {
+    padding: 0.3rem 0;
+}
+</style>
 
 {% endblock %}

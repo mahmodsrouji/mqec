@@ -1,0 +1,288 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Start -->
+<div class="container-fluid hero-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="hero-header-inner animated zoomIn">
+                    <h1 class="display-1 text-dark">Understanding Islam</h1>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Resources</a></li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">Non-Muslims</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Main Content -->
+<div class="container-fluid py-5 bg-light">
+    <div class="container py-5">
+        <!-- Introduction Section -->
+        <div class="row g-5 align-items-center mb-7 wow fadeIn">
+            <div class="col-lg-6">
+                <img src="https://images.unsplash.com/photo-1560769684-57e0d7a1491e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                     class="img-fluid rounded-4 shadow-lg" 
+                     alt="Mosque Interior"
+                     style="border-radius: 1.5rem !important;">
+            </div>
+            <div class="col-lg-6">
+                <div class="ps-lg-5">
+                    <h2 class="display-5 mb-4">Welcome to Islamic Teachings</h2>
+                    <p class="lead text-muted">
+                        Discover the wisdom and beauty behind Islamic practices through authentic sources and clear explanations.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Wisdom Section -->
+        <div class="row g-5 mb-7 wow fadeInUp">
+            <div class="col-12 text-center mb-5">
+                <h2 class="display-5">Wisdom Behind Islamic Practices</h2>
+                <p class="text-muted">Understanding the rationale behind divine commands</p>
+            </div>
+            
+            <div class="col-lg-6">
+                <div class="bg-white p-4 rounded-4 shadow-sm mb-4 h-100">
+                    <div class="d-flex align-items-start">
+                        <div class="icon-square bg-primary text-white rounded-3 flex-shrink-0 me-4">
+                            <i class="fas fa-clock fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="mb-3">Fixed Prayer Times</h4>
+                            <p class="text-muted">
+                                <span class="fw-bold">Wisdom:</span> Creates discipline, time management, 
+                                and continuous connection with God throughout the day
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="bg-white p-4 rounded-4 shadow-sm mb-4 h-100">
+                    <div class="d-flex align-items-start">
+                        <div class="icon-square bg-primary text-white rounded-3 flex-shrink-0 me-4">
+                            <i class="fas fa-hand-holding-heart fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="mb-3">Zakat (Charity)</h4>
+                            <p class="text-muted">
+                                <span class="fw-bold">Wisdom:</span> Purifies wealth, reduces inequality, 
+                                and strengthens community bonds
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="bg-white p-4 rounded-4 shadow-sm mb-4 h-100">
+                    <div class="d-flex align-items-start">
+                        <div class="icon-square bg-primary text-white rounded-3 flex-shrink-0 me-4">
+                            <i class="fas fa-utensils fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="mb-3">Fasting Ramadan</h4>
+                            <p class="text-muted">
+                                <span class="fw-bold">Wisdom:</span> Develops self-control, empathy for the poor, 
+                                and spiritual purification
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <div class="bg-white p-4 rounded-4 shadow-sm mb-4 h-100">
+                    <div class="d-flex align-items-start">
+                        <div class="icon-square bg-primary text-white rounded-3 flex-shrink-0 me-4">
+                            <i class="fas fa-kaaba fa-2x"></i>
+                        </div>
+                        <div>
+                            <h4 class="mb-3">Hajj Pilgrimage</h4>
+                            <p class="text-muted">
+                                <span class="fw-bold">Wisdom:</span> 
+                                Symbolizes unity of believers, equality before God, 
+                                spiritual renewal, and historical connection to Prophet Abraham
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <!-- FAQ Section -->
+        <div class="row g-5 wow fadeInUp">
+            <div class="col-lg-4">
+                <h2 class="display-5 mb-4">Common Questions</h2>
+                <p class="text-muted">Get answers to frequently asked questions about Islam and Muslim practices.</p>
+                <img src="https://images.unsplash.com/photo-1560421683-2587f1591d30?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                     class="img-fluid rounded-4 shadow-sm d-none d-lg-block" 
+                     alt="Quran">
+            </div>
+            
+            <div class="col-lg-8">
+                <div class="accordion accordion-flush" id="faqAccordion">
+                    <!-- Item 1 -->
+                    <div class="accordion-item shadow-sm mb-3 rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseOne">
+                                What do Muslims believe about Jesus?
+                            </button>
+                        </h2>
+                        <div id="collapseOne" 
+                             class="accordion-collapse collapse show" 
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Muslims respect Jesus as a prophet of God born to the Virgin Mary.
+                            </div>
+                        </div>
+                    </div>
+                
+                    <!-- Item 2 -->
+                    <div class="accordion-item shadow-sm mb-3 rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseThree">
+                                How do Muslims view other religions?
+                            </button>
+                        </h2>
+                        <div id="collapseThree" 
+                                class="accordion-collapse collapse" 
+                                data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Islam teaches respect for all faiths and freedom of religion.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="accordion-item shadow-sm mb-3 rounded-3">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" 
+                                    type="button" 
+                                    data-bs-toggle="collapse" 
+                                    data-bs-target="#collapseTwo">
+                                What is the purpose of hijab?
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" 
+                             class="accordion-collapse collapse" 
+                             data-bs-parent="#faqAccordion">
+                            <div class="accordion-body">
+                                Modest dress code emphasizing inner character over physical appearance.
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+.icon-square {
+    width: 56px;
+    height: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.rounded-4 {
+    border-radius: 1.5rem !important;
+}
+
+.accordion-item {
+    border: 1px solid rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.accordion-button {
+    font-weight: 500;
+    padding: 1.25rem;
+    font-size: 1.1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background: var(--bs-primary);
+    color: white;
+    box-shadow: none;
+}
+
+.accordion-body {
+    padding: 1.25rem;
+    background: rgba(99, 192, 139, 0.05);
+}
+
+.shadow-sm {
+    box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05) !important;
+}
+
+.bg-light {
+    background-color: #f8f9fa !important;
+}
+
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+}
+
+
+
+
+
+.accordion-button {
+    border-radius: 1rem !important;
+    padding: 1.25rem;
+    font-weight: 500;
+}
+
+.accordion-body {
+    padding: 1.25rem;
+    background: rgba(248, 249, 250, 0.5);
+}
+
+.mb-7 {
+    margin-bottom: 5rem !important;
+}
+
+.bg-white {
+    background: white !important;
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    align-self: flex-start;
+}
+
+.wow.fadeInUp {
+    animation-duration: 0.8s;
+}
+
+@media (max-width: 992px) {
+    .sticky-top {
+        position: static;
+    }
+}
+</style>
+
+{% endblock %}

@@ -1,0 +1,220 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Start -->
+<div class="container-fluid hero-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="hero-header-inner animated zoomIn">
+                    <h1 class="display-1 text-dark">Contact Us</h1>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Connect</a></li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">Contact</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Contact Section -->
+<div class="container-fluid py-5 bg-white">
+    <div class="container py-5">
+        <div class="row g-5 wow fadeInUp" data-wow-delay="0.2s">
+            <!-- Contact Info -->
+            <div class="col-lg-5">
+                <div class="mb-5">
+                    <h2 class="display-5 mb-4">Get in Touch</h2>
+                    <p class="lead text-muted">We're here to assist you with any inquiries or support you may need.</p>
+                </div>
+
+                <div class="d-flex flex-column gap-4">
+                    <!-- Mosque Contact Card -->
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-square bg-primary text-white rounded-3 shadow" style="border-radius: 25% !important;">
+                                <i class="fas fa-mosque fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-1">Masjid Quba Education Centre (MQEC)</h4>
+                                <p class="mb-0 text-muted">
+                                    <a href="tel:01142440235" class="text-decoration-none text-dark">
+                                        <i class="fas fa-phone-alt me-2 text-primary"></i>
+                                        0114 244 0235
+                                    </a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- General Inquiries Card -->
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-square bg-primary text-white rounded-3 shadow" style="border-radius: 25% !important;">
+                                <i class="fas fa-envelope fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-1">General Inquiries</h4>
+                                <a href="mailto:info@mqec.org.uk" class="text-primary">info@mqec.org.uk</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Donation Coordinator Card -->
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-square bg-primary text-white rounded-3 shadow" style="border-radius: 25% !important;">
+                                <i class="fas fa-hand-holding-heart fa-2x"></i>
+                            </div>
+                            <div>
+                                <h4 class="mb-1">Donation Coordinator</h4>
+                                <p class="mb-0 text-muted">Dr. Abdullah Alzouebi</p>
+                                <a href="tel:+447723506615" class="text-primary">+44 7723 506615</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="bg-white p-5 rounded-4 shadow-sm border wow fadeInUp" data-wow-delay="0.3s">
+                    <h3 class="mb-4">Send a Message</h3>
+                    <form>
+
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
+                                    <label for="name">Your Name</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+                                    <label for="email">Your Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                                    <label for="subject">Subject</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Message" id="message" name="message" style="height: 150px" required></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">
+                                    Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Map Section -->
+        <div class="row mt-5 wow fadeIn" data-wow-delay="0.4s">
+            <div class="col-12">
+                <div class="rounded-4 overflow-hidden shadow-sm border">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2379.149485248922!2d-1.4269707999999999!3d53.3942658!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4879781d6a89b06b%3A0xe22b64e9c85210c2!2sMasjid%20Quba%20Education%20Centre%20(MQEC)!5e0!3m2!1sen!2sbg!4v1740710497964!5m2!1sen!2sbg"
+                        width="100%" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                <p class="text-muted text-center mt-3">
+                    <i class="fas fa-map-marker-alt me-2 text-primary"></i>
+                    Location: 0114 244 0235, Sheffield, United Kingdom
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .rounded-4 {
+        border-radius: 1.5rem !important;
+    }
+
+    .icon-square {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+
+    .icon-square:hover {
+        transform: rotate(5deg) scale(1.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+
+    .fa-mosque {
+        position: relative;
+        top: -2px;
+    }
+
+    .border {
+        border: 1px solid rgba(0,0,0,0.1) !important;
+    }
+
+    /* Spacing Improvements */
+    .rounded-4 {
+        border-radius: 1.25rem !important;
+    }
+
+    .form-floating>.form-control {
+        border-radius: 0.75rem;
+        border: 1px solid #dee2e6;
+        padding: 1rem 1.25rem;
+    }
+
+    .form-floating>label {
+        padding: 1rem 1.25rem;
+    }
+
+    .btn-primary {
+        background: #368257;
+        border: none;
+        transition: all 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background: #2a5b7c;
+        transform: translateY(-2px);
+    }
+
+    .shadow-sm {
+        box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.05) !important;
+    }
+
+    /* Spacing Overrides */
+    .mb-5 { margin-bottom: 3rem !important; }
+    .mt-5 { margin-top: 3rem !important; }
+    .gap-4 { gap: 1.5rem !important; }
+
+    /* Map Full Width */
+    iframe {
+        width: 100%;
+        height: 450px;
+        border-radius: 1.25rem;
+    }
+
+</style>
+
+{% endblock %}

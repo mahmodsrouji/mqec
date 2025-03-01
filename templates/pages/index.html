@@ -8,9 +8,9 @@
         <div class="row">
             <div class="col-lg-7">
                 <div class="hero-header-inner animated zoomIn">
-                    <p class="fs-4 text-dark">WELCOME TO THEMosque</p>
+                    <p class="fs-4 text-dark">Masjid Quba Education Centre</p>
                     <h1 class="display-1 mb-5 custom-color">Purity Comes From Faith</h1>
-                    <a href="" class="btn btn-primary py-3 px-5">Read More</a>
+                    <!-- <a href="" class="btn btn-primary py-3 px-5">Read More</a> -->
                 </div>
             </div>
         </div>
@@ -19,758 +19,507 @@
 <!-- Hero End -->
 
 
+<div class="prayer-times-section">
+    {% include "prayers/_prayer_times.html" %}
+</div>
+
+
 <!-- About Satrt -->
-<div class="container-fluid about py-5">
+<div class="container-fluid about py-5 bg-white">
     <div class="container py-5">
-        <div class="row g-5 mb-5">
-            <div class="col-xl-6">
+        <div class="row g-5 align-items-center">
+            <!-- Image Gallery -->
+            <div class="col-lg-6">
                 <div class="row g-4">
                     <div class="col-6">
-                        <img src="{% static 'img/morocco-2435391_1280.jpg' %}" class="img-fluid h-100 wow zoomIn" data-wow-delay="0.1s" alt="">
+                        <img src="{% static 'img/morocco-2435391_1280.jpg' %}" 
+                             class="img-fluid h-100 wow zoomIn rounded-3" 
+                             data-wow-delay="0.1s" 
+                             alt="Mosque">
                     </div>
                     <div class="col-6">
-                        <img src="{% static 'img/schwetzingen-3749084_1920.jpg' %}" class="img-fluid pb-3 wow zoomIn" data-wow-delay="0.1s" alt="">
-                        <img src="{% static 'img/about-3.jpg' %}" class="img-fluid pt-3 wow zoomIn" data-wow-delay="0.1s" alt="">
+                        <img src="{% static 'img/schwetzingen-3749084_1920.jpg' %}" 
+                             class="img-fluid pb-3 wow zoomIn rounded-3" 
+                             data-wow-delay="0.2s" 
+                             alt="Community">
+                        <img src="{% static 'img/about-3.jpg' %}" 
+                             class="img-fluid pt-3 wow zoomIn rounded-3" 
+                             data-wow-delay="0.3s" 
+                             alt="Education">
                     </div>
                 </div>
             </div>
-            <div class="col-xl-6 wow fadeIn" data-wow-delay="0.5s">
-                <p class="fs-5 text-uppercase text-primary">About THEMosque</p>
-                <h1 class="display-5 pb-4 m-0">Allah Help Those Who Help Themselves</h1>
-                <p class="pb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam. Etiam quis
-                    mauris justo. Vivamus purus nulla, rutrum ac risus in.</p>
+
+            <!-- Content Section -->
+            <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
+                <p class="fs-5 text-uppercase" style="color: var(--bs-thirdly-color);">About Us</p>
+                <h1 class="display-5 pb-4">Allah Help Those Who Help Themselves</h1>
+                <p class="pb-4 text-secondary">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
+
+                <!-- Vision & Mission -->
                 <div class="row g-4 mb-4">
                     <div class="col-md-6">
-                        <div class="ps-3 d-flex align-items-center justify-content-start">
-                            <span class="bg-primary btn-md-square rounded-circle mt-4 me-2"><i
-                                    class="fa fa-eye text-dark fa-4x mb-5 pb-2"></i></span>
-                            <div class="ms-4">
+                        <div class="d-flex align-items-start">
+                            <div class="icon-box" style="background: var(--bs-thirdly-color);">
+                                <i class="fa fa-eye fa-2x text-white"></i>
+                            </div>
+                            <div class="ms-3">
                                 <h5>Our Vision</h5>
-                                <p>Lorem ipsum dolor sit amet tetur nod elit sed</p>
+                                <p class="text-muted">Lorem ipsum dolor sit amet</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
-                        <div class="ps-3 d-flex align-items-center justify-content-start">
-                            <span class="bg-primary btn-md-square rounded-circle mt-4 me-2"><i
-                                    class="fa fa-flag text-dark fa-4x mb-5 pb-2"></i></span>
-                            <div class="ms-4">
+                        <div class="d-flex align-items-start">
+                            <div class="icon-box" style="background: var(--bs-thirdly-color);">
+                                <i class="fa fa-flag fa-2x text-white"></i>
+                            </div>
+                            <div class="ms-3">
                                 <h5>Our Mission</h5>
-                                <p>Lorem ipsum dolor sit amet tetur nod elit sed</p>
+                                <p class="text-muted">Lorem ipsum dolor sit amet</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="bg-light p-3 mb-4">
-                    <div class="row align-items-center justify-content-center">
+
+                <!-- Donation Section -->
+                <div class="bg-light p-4 rounded-3 mb-4">
+                    <div class="row align-items-center">
                         <div class="col-3">
-                            <img src="{% static 'img/about-child.jpg' %}" class="img-fluid rounded-circle" alt="">
+                            <img src="{% static 'img/about-child.jpg' %}" 
+                                 class="img-fluid rounded-circle" 
+                                 alt="Donation">
                         </div>
                         <div class="col-6">
-                            <p class="mb-0">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.
-                                Etiam quis mauris justo.</p>
+                            <p class="mb-0 text-muted">Lorem ipsum dolor sit amet</p>
                         </div>
                         <div class="col-3">
-                            <h2 class="mb-0 text-primary text-center">$20,46</h2>
+                            <h2 class="mb-0 text-center" style="color: var(--bs-thirdly-color);">$20,46</h2>
                             <h5 class="mb-0 text-center">Raised</h5>
                         </div>
                     </div>
                 </div>
-                <div class="row g-2">
+
+                <!-- Features -->
+                <div class="row g-3">
                     <div class="col-md-6">
-                        <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>Charity & Donation</p>
-                        <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Parent Education</p>
+                        <p class="mb-2">
+                            <i class="fa fa-check me-2" style="color: var(--bs-thirdly-color);"></i>
+                            Charity & Donation
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa fa-check me-2" style="color: var(--bs-thirdly-color);"></i>
+                            Parent Education
+                        </p>
                     </div>
                     <div class="col-md-6">
-                        <p class="mb-2"><i class="fa fa-check text-primary me-3"></i>Hadith & Sunnah</p>
-                        <p class="mb-0"><i class="fa fa-check text-primary me-3"></i>Mosque Development</p>
+                        <p class="mb-2">
+                            <i class="fa fa-check me-2" style="color: var(--bs-thirdly-color);"></i>
+                            Hadith & Sunnah
+                        </p>
+                        <p class="mb-0">
+                            <i class="fa fa-check me-2" style="color: var(--bs-thirdly-color);"></i>
+                            Mosque Development
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="container text-center bg-primary py-5 wow fadeIn" data-wow-delay="0.1s">
-            <div class="row g-4 align-items-center">
+
+        <!-- CTA Section -->
+        <div class="container text-center py-5 my-5 rounded-3 wow fadeIn" 
+             style="background: var(--bs-thirdly-color);" 
+             data-wow-delay="0.1s">
+            <div class="row align-items-center">
                 <div class="col-lg-2">
-                    <i class="fa fa-mosque fa-5x text-white"></i>
+                    <i class="fa fa-mosque fa-3x text-white"></i>
                 </div>
                 <div class="col-lg-7 text-center text-lg-start">
-                    <h1 class="mb-0">Every Muslim Needs To Realise The Importance Of The "Pillar" Of Islam</h1>
+                    <h2 class="text-white mb-0">Every Muslim Needs To Realize The Importance</h2>
                 </div>
-                <div class="col-lg-3">
-                    <a href="" class="btn btn-light py-2 px-4">Learn More</a>
-                </div>
+                <!-- <div class="col-lg-3 text-center text-lg-end">
+                    <a href="#" class="btn btn-light px-4 mt-3 mt-lg-0">Learn More</a>
+                </div> -->
             </div>
         </div>
     </div>
 </div>
+<style>
+    /* Custom Styles */
+    :root{
+        --bs-thirdly-color: #4abe7c;
+    }
+
+    .icon-box {
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 15px;
+    }
+    
+    .rounded-3 {
+        border-radius: 1rem !important;
+    }
+    
+    .btn-light {
+        background: rgba(255,255,255,0.9);
+        transition: all 0.3s ease;
+    }
+    
+    .btn-light:hover {
+        background: #fff;
+        transform: translateY(-2px);
+    }
+    
+    .wow.zoomIn {
+        transition: transform 0.3s ease;
+    }
+    
+    .wow.zoomIn:hover {
+        transform: scale(1.02);
+    }
+    </style>
 <!-- About End -->
 
 
 <!-- Activities Start -->
-<div class="container-fluid activities py-5">
-    <div class="container py-5">
-        <div class="mx-auto text-center mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            <p class="fs-5 text-uppercase text-primary">Activities</p>
-            <h1 class="display-3">Here Are Our Activities</h1>
+<div class="container-fluid activities py-5 bg-light">
+    <div class="container py-5 wow fadeInUp" data-wow-delay="0.2s">
+        <div class="mx-auto text-center mb-5" style="max-width: 700px;">
+            <p class="fs-5 text-uppercase text-primary mb-2">Activities</p>
+            <h1 class="display-4 fw-bold text-dark mb-4">Explore Our Islamic Activities</h1>
         </div>
-        <div class="row g-4">
-            <div class="col-lg-6 col-xl-4">
-                <div class="activities-item p-4 wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-mosque fa-4x text-dark"></i>
-                    <div class="ms-4">
-                        <h4>Mosque Development</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
-                        <a href="" class="btn btn-primary px-3">Read More</a>
+        <div class="row g-4 justify-content-center">
+            
+            <!-- New Muslim Card -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-star-and-crescent fa-3x text-primary mb-4"></i>
+                        <h3 class="h4 fw-bold text-dark mb-3">New Muslims</h3>
+                        <p class="text-muted mb-4">Comprehensive guidance and resources for new reverts to Islam.</p>
+                        <a href="{% url 'new_muslims' %}" class="btn btn-outline-primary px-4 rounded-pill">
+                            Explore Resources <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="activities-item p-4 wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-donate fa-4x text-dark"></i>
-                    <div class="ms-4">
-                        <h4>Charity & Donation</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
-                        <a href="" class="btn btn-primary px-3">Read More</a>
+
+            <!-- Weekly Classes Card -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-book-open fa-3x text-success mb-4"></i>
+                        <h3 class="h4 fw-bold text-dark mb-3">Weekly Classes</h3>
+                        <p class="text-muted mb-4">Regular educational sessions covering various Islamic topics.</p>
+                        <a href="{% url 'weekly_classes' %}" class="btn btn-outline-success px-4 rounded-pill">
+                            View Schedule <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="activities-item p-4 wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-quran fa-4x text-dark"></i>
-                    <div class="ms-4">
-                        <h4>Quran Learning</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
-                        <a href="" class="btn btn-primary px-3">Read More</a>
+
+            <!-- Charity & Donation Card -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-hand-holding-heart fa-3x text-danger mb-4"></i>
+                        <h3 class="h4 fw-bold text-dark mb-3">Zakat & Sadaqah</h3>
+                        <p class="text-muted mb-4">Support charitable causes and fulfill your zakat obligations.</p>
+                        <a href="{% url 'donation' %}" class="btn btn-outline-danger px-4 rounded-pill">
+                            Donate Now <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="activities-item p-4 wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-book fa-4x text-dark"></i>
-                    <div class="ms-4">
-                        <h4>New Muslim</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
-                        <a href="" class="btn btn-primary px-3">Read More</a>
+
+            <!-- Non-Muslim Card -->
+            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.6s">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body p-4 text-center">
+                        <i class="fas fa-globe-asia fa-3x text-info mb-4"></i>
+                        <h3 class="h4 fw-bold text-dark mb-3">Discover Islam</h3>
+                        <p class="text-muted mb-4">Essential information about Islam for non-Muslims.</p>
+                        <a href="{% url 'non_muslims' %}" class="btn btn-outline-info px-4 rounded-pill">
+                            Learn More <i class="fas fa-arrow-right ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="activities-item p-4 wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-book-open fa-4x text-dark"></i>
-                    <div class="ms-4">
-                        <h4>Weekly-Classes</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
-                        <a href="" class="btn btn-primary px-3">Read More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="activities-item p-4 wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-hands fa-4x text-dark"></i>
-                    <div class="ms-4">
-                        <h4>Non-Muslim</h4>
-                        <p class="mb-4">Lorem ipsum dolor sit amet elit. Donec tempus eros vel dolor mattis aliquam.</p>
-                        <a href="" class="btn btn-primary px-3">Read More</a>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
+    <style>
+    .hover-effect {
+        transition: all 0.3s ease;
+        transform: translateY(0);
+    }
+    
+    .hover-effect:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    .btn-outline-primary {
+        border-width: 2px;
+    }
+    
+    .rounded-pill {
+        border-radius: 50rem !important;
+    }
+    </style>
 </div>
-<!-- Activities end -->
+<!-- Activities End -->
 
 
-<div id="services">
-    <div class="container">
-        <div class="title">
-            <h1>Our Mission</h1>
-            <div class="line"></div>
-        </div>
-        <div class="box">
-            <div class="card">
-                <img class="icon" src="{% static 'img/islamic.png' %}" alt="">
-                <a href="#"><h2>Salah & Praying</h2></a>
-                <div class="par">
+<!-- Missions Section Start -->
+<div class="container text-center my-5 wow fadeInUp" data-wow-delay="0.2s" style="min-height: 500px;">
+    <!-- Section Title -->
+    <h1 class="mb-4 fw-bold display-4" style="color: #368257; padding: 2rem 0 1rem 0;">Our Mission</h1>
+
+    <style>
+        .custom-link:hover h5 {
+            color: #368257 !important;
+            transition: color 0.8s ease;
+        }
+    </style>
+    
+    <div class="row g-4 justify-content-center">
+        <!-- First Card -->
+        <div class="col-md-5 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="card shadow border-0 p-3 custom-card">
+                <img src="{% static 'img/islamic.png' %}" alt="Icon" class="mx-auto" width="80">
+                <div class="card-body d-flex flex-column">
+                    <a href="{% url 'prayer_times' %}" class="text-decoration-none custom-link"> 
+                        <h5 class="fw-bold text-warning">Salah &amp; Praying</h5>
+                    </a>
                     <h6>Prayer is the pillar of religion</h6>
                     <p>This page displays prayer times, some information about prayer.</p>
                 </div>
             </div>
-            <div class="card">
-                <img class="icon" src="{% static 'img/islamic.png' %}" alt="">
-                <a href="#"><h2>New Muslim</h2></a>
-                <div class="par">
-                    <h6>Guidance for new reverts</h6>
-                    <p>This page provides resources for new Muslims.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="icon" src="{% static 'img/islamic.png' %}" alt="">
-                <a href="#"><h2>Non-Muslim</h2></a>
-                <div class="par">
-                    <h6>Discover Islam</h6>
-                    <p>Information about Islam for non-Muslims.</p>
-                </div>
-            </div>
-            <div class="card">
-                <img class="icon" src="{% static 'img/islamic.png' %}" alt="">
-                <a href="#"><h2>Weekly Classes</h2></a>
-                <div class="par">
-                    <h6>Educational sessions</h6>
-                    <p>Schedule for weekly Islamic classes.</p>
-                </div>
-            </div>
         </div>
-    </div>
-</div>
-
-
-<!-- Missions Section Start -->
-<div class="container text-center my-5">
-    <!-- Section Title -->
-    <h1 class="mb-4 fw-bold">Our Mission</h1>
     
-    <div class="row g-4">
-      <!-- First Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow border-0 p-3" style="min-height: 370px;">
-          <img src="{% static 'img/islamic.png' %}" alt="Icon" class="mx-auto" width="80">
-          <div class="card-body">
-            <h5 class="fw-bold text-warning">Salah &amp; Praying</h5>
-            <h6>Prayer is the pillar of religion</h6>
-            <p>This page displays prayer times, some information about prayer.</p>
-            <!-- Link to another page (adjust the URL name) -->
-            <a href="#" class="btn btn-primary mt-3">Learn More</a>
-          </div>
+        <!-- Second Card -->
+        <div class="col-md-5 col-lg-4 wow fadeInUp" data-wow-delay="0.4s">
+            <div class="card shadow border-0 p-3 custom-card">
+                <img src="{% static 'img/invitation.png' %}" alt="Icon" class="mx-auto" width="80">
+                <div class="card-body d-flex flex-column">
+                    <a href="{% url 'Nikkah_ceremony' %}" class="text-decoration-none custom-link">
+                        <h5 class="fw-bold text-warning">Nikkah Ceremony</h5>
+                    </a>
+                    <h6>wedding services</h6>
+                    <p>We provide wedding services, marriage contract etc...</p>
+                </div>
+            </div>
         </div>
-      </div>
-  
-      <!-- Second Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow border-0 p-3" style="min-height: 370px;">
-          <img src="{% static 'img/islamic.png' %}" alt="Icon" class="mx-auto" width="80">
-          <div class="card-body">
-            <h5 class="fw-bold text-warning">New Muslim</h5>
-            <h6>Guidance for new reverts</h6>
-            <p>This page provides resources for new Muslims.</p>
-            <a href="#" class="btn btn-primary mt-3">Learn More</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Third Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow border-0 p-3" style="min-height: 370px;">
-          <img src="{% static 'img/islamic.png' %}" alt="Icon" class="mx-auto" width="80">
-          <div class="card-body">
-            <h5 class="fw-bold text-warning">Non-Muslim</h5>
-            <h6>Discover Islam</h6>
-            <p>Information about Islam for non-Muslims.</p>
-            <a href="#" class="btn btn-primary mt-3">Learn More</a>
-          </div>
-        </div>
-      </div>
-  
-      <!-- Fourth Card -->
-      <div class="col-md-6 col-lg-3">
-        <div class="card shadow border-0 p-3" style="min-height: 370px;">
-          <img src="{% static 'img/islamic.png' %}" alt="Icon" class="mx-auto" width="80">
-          <div class="card-body">
-            <h5 class="fw-bold text-warning">Weekly Classes</h5>
-            <h6>Educational sessions</h6>
-            <p>Schedule for weekly Islamic classes.</p>
-            <a href="#" class="btn btn-primary mt-3">Learn More</a>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 <!-- Missions Section End -->
-  
 
 
-
-<!-- Events Start -->
-<div class="container-fluid event py-5">
-    <div class="container py-5">
-        <h1 class="display-3 mb-5 wow fadeIn" data-wow-delay="0.1s">Upcoming <span class="text-primary">Events</span>
-        </h1>
-        <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.1s">
-            <div class="col-3 col-lg-2 pe-0">
-                <div class="text-center border-bottom border-dark py-3 px-2">
-                    <h6>01 Jan 2045</h6>
-                    <p class="mb-0">Fri 06:55</p>
-                </div>
-            </div>
-            <div class="col-9 col-lg-6 border-start border-dark pb-5">
-                <div class="ms-3">
-                    <h4 class="mb-3">Milad Un Nabi</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-                    <a href="#" class="btn btn-primary px-3">Join Now</a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="overflow-hidden mb-5">
-                    <img src="{% static 'img/events-1.jpg' %}" class="img-fluid w-100" alt="">
-                </div>
-            </div>
+<!-- Ramadan Section Start -->
+<div class="container-fluid py-5 mt-5 wow fadeIn" data-wow-delay="0.3s" style="background-color: #f9f9f9;">
+    <div class="container">
+      <div class="ramadan-card p-4 p-md-5">
+        <div class="row g-5 align-items-center">
+          <!-- Image Column -->
+          <div class="col-md-6">
+            <img src="{% static 'img/ramadan.png' %}"
+                 class="img-fluid shadow-sm wow zoomIn"
+                 data-wow-delay="0.3s"
+                 alt="Ramadan Specials">
+          </div>
+          <!-- Content Column -->
+          <div class="col-md-6">
+            <h2 class="mb-4" style="color: #368257; font-size: 2.5rem;">Ramadan Specials</h2>
+            <p class="lead mb-4" style="color: #555;">
+              Experience the blessed month of Ramadan at masjid Quba with daily prayer timetables, community iftars, Taraweeh prayers, and spiritual retreats.
+            </p>
+            <ul class="list-unstyled mb-4">
+              <li class="mb-2">
+                <i class="fas fa-calendar-alt text-primary me-2"></i>
+                Daily Prayer Timetable
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-utensils text-primary me-2"></i>
+                Community Iftar Events
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-mosque text-primary me-2"></i>
+                Taraweeh & Qiyam-ul-layl Prayers
+              </li>
+              <li class="mb-2">
+                <i class="fas fa-hands-praying text-primary me-2"></i>
+                Spiritual Retreat (Itikaf)
+              </li>
+            </ul>
+            <a href="{% url 'ramadan' %}" class="btn btn-primary px-4">
+              Discover More
+            </a>
+          </div>
         </div>
-        <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.3s">
-            <div class="col-3 col-lg-2 pe-0">
-                <div class="text-center border-bottom border-dark py-3 px-2">
-                    <h6>01 Jan 2045</h6>
-                    <p class="mb-0">Wed 11:30</p>
-                </div>
-            </div>
-            <div class="col-9 col-lg-6 border-start border-dark pb-5">
-                <div class="ms-3">
-                    <h4 class="mb-3">Eid Ul Fitr</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-                    <a href="#" class="btn btn-primary px-3">Join Now</a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="overflow-hidden mb-5">
-                    <img src="{% static 'img/events-2.jpg' %}" class="img-fluid w-100" alt="">
-                </div>
-            </div>
-        </div>
-        <div class="row g-4 event-item wow fadeIn" data-wow-delay="0.5s">
-            <div class="col-3 col-lg-2 pe-0">
-                <div class="text-center border-bottom border-dark py-3 px-2">
-                    <h6>01 Jan 2045</h6>
-                    <p class="mb-0">Thu 11:30</p>
-                </div>
-            </div>
-            <div class="col-9 col-lg-6 border-start border-dark pb-5">
-                <div class="ms-3">
-                    <h4 class="mb-3">Eud Ul Azha</h4>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                        ullamco laboris nisi ut
-                        aliquip ex ea commodo consequat. Duis aute irure dolor in </p>
-                    <a href="#" class="btn btn-primary px-3">Join Now</a>
-                </div>
-            </div>
-            <div class="col-12 col-lg-4">
-                <div class="overflow-hidden mb-5">
-                    <img src="{% static 'img/events-3.jpg' %}" class="img-fluid w-100" alt="">
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
 </div>
-<!-- Events End -->
+<style>
+    .ramadan-card {
+      background: #fff;          
+      border-radius: 1rem;      
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1); 
+    }
+    .ramadan-card img {
+      border-radius: 1rem;           
+    }
+</style>
+<!-- Ramadan Section End -->
 
 
-<!-- Sermon Start -->
-<div class="container-fluid sermon py-5">
+<!-- Contact Section Start -->
+<div class="container-fluid py-5 bg-white wow fadeIn" data-wow-delay="0.3s">
     <div class="container py-5">
-        <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            <p class="fs-5 text-uppercase text-primary">Sermons</p>
-            <h1 class="display-3">Join The Islamic Community</h1>
-        </div>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-6 col-xl-4">
-                <div class="sermon-item wow fadeIn" data-wow-delay="0.1s">
-                    <div class="overflow-hidden p-4 pb-0">
-                        <img src="{% static 'img/sermon-1.jpg' %}" class="img-fluid w-100" alt="">
-                    </div>
-                    <div class="p-4">
-                        <div class="sermon-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href=""
-                                        class="text-muted">Admin</small></a>
-                            </div>
-                            <div class="">
-                                <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">How to get closer to Allah</a>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                    </div>
+        <div class="row g-5 align-items-center">
+            <!-- Contact Info -->
+            <div class="col-lg-5">
+                <div class="mb-5">
+                    <h2 class="display-5 mb-4">Get in Touch</h2>
+                    <p class="lead text-muted">We're here to assist you with any inquiries or support you may need.</p>
                 </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="sermon-item wow fadeIn" data-wow-delay="0.3s">
-                    <div class="overflow-hidden p-4 pb-0">
-                        <img src="{% static 'img/sermon-2.jpg' %}" class="img-fluid w-100" alt="">
-                    </div>
-                    <div class="p-4">
-                        <div class="sermon-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href=""
-                                        class="text-muted">Admin</small></a>
-                            </div>
-                            <div class="">
-                                <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of Hajj in Islam</a>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="sermon-item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="overflow-hidden p-4 pb-0">
-                        <img src="{% static 'img/sermon-3.jpg' %}" class="img-fluid w-100" alt="">
-                    </div>
-                    <div class="p-4">
-                        <div class="sermon-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fa fa-calendar me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">13 Nov 2023</small></a>
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href=""
-                                        class="text-muted">Admin</small></a>
-                            </div>
-                            <div class="">
-                                <a href="" class="me-1"><i class="fas fa-video text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-headphones text-muted"></i></a>
-                                <a href="" class="me-1"><i class="fas fa-file-alt text-muted"></i></a>
-                                <a href="" class=""><i class="fas fa-image text-muted"></i></a>
-                            </div>
-                        </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of “Piller” of Islam</a>
-                        <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Sermon End -->
 
-
-<!-- Blog Start -->
-<div class="container-fluid py-5">
-    <div class="container py-5">
-        <h1 class="display-3 mb-5 wow fadeIn" data-wow-delay="0.1s">Latest From <span class="text-primary">Our
-                Blog</span></h1>
-        <div class="row g-4 justify-content-center">
-            <div class="col-lg-6 col-xl-4">
-                <div class="blog-item wow fadeIn" data-wow-delay="0.1s">
-                    <div class="blog-img position-relative overflow-hidden">
-                        <img src="{% static 'img/blog-1.jpg' %}" class="img-fluid w-100" alt="">
-                        <div class="bg-primary d-inline px-3 py-2 text-center text-white position-absolute top-0 end-0">
-                            01 Jan 2045</div>
-                    </div>
-                    <div class="p-4">
-                        <div class="blog-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
-                                        Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">12 Comments</small></a>
+                <div class="d-flex flex-column gap-4">
+                    <!-- Mosque Contact Card -->
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-square bg-primary text-white rounded-3 shadow">
+                                <i class="fas fa-mosque fa-2x"></i>
                             </div>
-                            <div class="">
-                                <a href=""><i class="fas fa-bookmark text-muted"></i></a>
+                            <div>
+                                <h4 class="mb-1">Masjid Quba Education Centre (MQEC)</h4>
+                                <p class="mb-0 text-muted">
+                                    <a href="tel:01142440235" class="text-decoration-none text-dark">
+                                        <i class="fas fa-phone-alt me-2 text-primary"></i>
+                                        0114 244 0235
+                                    </a>
+                                </p>
                             </div>
                         </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of “Piller” of Islam</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="btn btn-primary px-3">More Details</a>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="blog-item wow fadeIn" data-wow-delay="0.3s">
-                    <div class="blog-img position-relative overflow-hidden">
-                        <img src="{% static 'img/blog-2.jpg' %}" class="img-fluid w-100" alt="">
-                        <div class="bg-primary d-inline px-3 py-2 text-center text-white position-absolute top-0 end-0">
-                            01 Jan 2045</div>
-                    </div>
-                    <div class="p-4">
-                        <div class="blog-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
-                                        Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">12 Comments</small></a>
+
+                    <!-- General Inquiries Card -->
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-square bg-primary text-white rounded-3 shadow">
+                                <i class="fas fa-envelope fa-2x"></i>
                             </div>
-                            <div class="">
-                                <a href=""><i class="fas fa-bookmark text-muted"></i></a>
+                            <div>
+                                <h4 class="mb-1">General Inquiries</h4>
+                                <a href="mailto:info@mqec.org.uk" class="text-primary">info@mqec.org.uk</a>
                             </div>
                         </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">How to get closer to Allah</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="btn btn-primary px-3">More Details</a>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-6 col-xl-4">
-                <div class="blog-item wow fadeIn" data-wow-delay="0.5s">
-                    <div class="blog-img position-relative overflow-hidden">
-                        <img src="{% static 'img/blog-3.jpg' %}" class="img-fluid w-100" alt="">
-                        <div class="bg-primary d-inline px-3 py-2 text-center text-white position-absolute top-0 end-0">
-                            01 Jan 2045</div>
-                    </div>
-                    <div class="p-4">
-                        <div class="blog-meta d-flex justify-content-between pb-2">
-                            <div class="">
-                                <small><i class="fas fa-user me-2 text-muted"></i><a href="" class="text-muted me-2">By
-                                        Admin</small></a>
-                                <small><i class="fa fa-comment-alt me-2 text-muted"></i><a href=""
-                                        class="text-muted me-2">12 Comments</small></a>
+
+                    <!-- Donation Coordinator Card -->
+                    <div class="bg-white p-4 rounded-4 shadow-sm border">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="icon-square bg-primary text-white rounded-3 shadow">
+                                <i class="fas fa-hand-holding-heart fa-2x"></i>
                             </div>
-                            <div class="">
-                                <a href=""><i class="fas fa-bookmark text-muted"></i></a>
+                            <div>
+                                <h4 class="mb-1">Donation Coordinator</h4>
+                                <p class="mb-0 text-muted">Dr. Abdullah Alzouebi</p>
+                                <a href="tel:+447723506615" class="text-primary">+44 7723 506615</a>
                             </div>
                         </div>
-                        <a href="" class="d-inline-block h4 lh-sm mb-3">Importance of Hajj in Islam</a>
-                        <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                            aliquip ex ea commodo consequat.</p>
-                        <a href="#" class="btn btn-primary px-3">More Details</a>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-<!-- Blog End -->
 
-
-<!-- Team Start -->
-<div class="container-fluid team py-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            <p class="fs-5 text-uppercase text-primary">Our Team</p>
-            <h1 class="display-3">Meet Our Organizer</h1>
-        </div>
-        <div class="row g-5">
-            <div class="col-lg-4 col-xl-5">
-                <div class="team-img wow zoomIn" data-wow-delay="0.1s">
-                    <img src="{% static 'img/team-1.jpg' %}" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="col-lg-8 col-xl-7">
-                <div class="team-item wow fadeIn" data-wow-delay="0.1s">
-                    <h1>Anamul Hasan</h1>
-                    <h5 class="fw-normal fst-italic text-primary mb-4">President</h5>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. aliquip ex ea commodo
-                        consequat.</p>
-                    <div class="team-icon d-flex pb-4 mb-4 border-bottom border-primary">
-                        <a class="btn btn-primary btn-lg-square me-2" href=""><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-primary btn-lg-square me-2" href=""><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="btn btn-primary btn-lg-square me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="btn btn-primary btn-lg-square"><i class="fab fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="team-item wow zoomIn" data-wow-delay="0.2s">
-                            <img src="{% static 'img/team-2.jpg' %}" class="img-fluid w-100" alt="">
-                            <div class="team-content text-dark text-center py-3">
-                                <div class="team-content-inner">
-                                    <h5 class="mb-0">Mustafa Kamal</h5>
-                                    <p class="text-dark">Imam</p>
-                                    <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-primary btn-sm-square me-2" href=""><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-2" href=""><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-primary btn-sm-square me-2"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-primary btn-sm-square"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
+            <!-- Contact Form -->
+            <div class="col-lg-7">
+                <div class="bg-white p-5 rounded-4 shadow-sm border">
+                    <h3 class="mb-4">Send a Message</h3>
+                    <form>
+                        <div class="row g-4">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                    <label for="name">Your Name</label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-item wow zoomIn" data-wow-delay="0.4s">
-                            <img src="{% static 'img/team-3.jpg' %}" class="img-fluid w-100" alt="">
-                            <div class="team-content text-dark text-center py-3">
-                                <div class="team-content-inner">
-                                    <h5 class="mb-0">Nahiyan Momen</h5>
-                                    <p class="text-dark">Teacher</p>
-                                    <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-primary btn-sm-square me-2" href=""><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-2" href=""><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-primary btn-sm-square me-2"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-primary btn-sm-square"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                                    <label for="email">Your Email</label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="team-item wow zoomIn" data-wow-delay="0.6s">
-                            <img src="{% static 'img/team-4.jpg' %}" class="img-fluid w-100" alt="">
-                            <div class="team-content text-dark text-center py-3">
-                                <div class="team-content-inner">
-                                    <h5 class="mb-0">Asfaque Ali</h5>
-                                    <p class="text-dark">Volunteer</p>
-                                    <div class="team-icon d-flex align-items-center justify-content-center">
-                                        <a class="btn btn-primary btn-sm-square me-2" href=""><i
-                                                class="fab fa-facebook-f"></i></a>
-                                        <a class="btn btn-primary btn-sm-square me-2" href=""><i
-                                                class="fab fa-twitter"></i></a>
-                                        <a href="#" class="btn btn-primary btn-sm-square me-2"><i
-                                                class="fab fa-instagram"></i></a>
-                                        <a href="#" class="btn btn-primary btn-sm-square"><i
-                                                class="fab fa-linkedin-in"></i></a>
-                                    </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                    <label for="subject">Subject</label>
                                 </div>
                             </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" placeholder="Message" id="message" style="height: 150px"></textarea>
+                                    <label for="message">Message</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">
+                                    Send Message
+                                </button>
+                            </div>
                         </div>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<!-- Team End -->
 
-
-<!-- Testiminial Start -->
-<div class="container-fluid testimonial py-5">
-    <div class="container py-5">
-        <div class="text-center mx-auto mb-5 wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
-            <p class="fs-5 text-uppercase text-primary">Testimonial</p>
-            <h1 class="display-3">What People Say About Islam</h1>
-        </div>
-        <div class="owl-carousel testimonial-carousel wow fadeIn" data-wow-delay="0.1s">
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-1.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
-                        </div>
-                    </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-2.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
-                        </div>
-                    </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-3.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
-                        </div>
-                    </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <div class="d-flex mb-3">
-                    <div class="position-relative">
-                        <img src="{% static 'img/testimonial-4.jpg' %}" class="img-fluid" alt="">
-                        <div class="btn-md-square bg-primary rounded-circle position-absolute"
-                            style="top: 25px; left: -25px;">
-                            <i class="fa fa-quote-left text-dark"></i>
-                        </div>
-                    </div>
-                    <div class="ps-3 my-auto ">
-                        <h5 class="mb-0">Full Name</h5>
-                        <p class="m-0">Profession</p>
-                    </div>
-                </div>
-                <div class="testimonial-content">
-                    <div class="d-flex">
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                        <i class="fas fa-star text-primary"></i>
-                    </div>
-                    <p class="fs-5 m-0 pt-3">Lorem ipsum dolor sit amet elit, sed do tempor ut labore et dolore magna
-                        aliqua. Ut enim ad minim quis.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- Testiminial End -->
+<style>
+    /* Icon Enhancements */
+    .icon-square {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
+    }
+    
+    .icon-square:hover {
+        transform: rotate(5deg) scale(1.1);
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    
+    .fa-mosque {
+        position: relative;
+        top: -2px;
+    }
+    
+    /* Border Adjustments */
+    .border {
+        border: 1px solid rgba(0,0,0,0.1) !important;
+    }
+    
+    /* Spacing Improvements */
+    .rounded-4 {
+        border-radius: 1.25rem !important;
+    }
+    
+    .gap-4 > * {
+        margin-bottom: 1.5rem;
+    }
+    
+    .form-floating>label {
+        left: auto !important;
+        right: 1.25rem !important;
+        text-align: right;
+    }
+    </style>
+<!-- Contact Section End -->
 
 {% endblock %}

@@ -1,0 +1,232 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<!-- Hero Start -->
+<div class="container-fluid hero-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7">
+                <div class="hero-header-inner animated zoomIn">
+                    <h1 class="display-1 text-dark">Nikkah Ceremony</h1>
+                    <ol class="breadcrumb mb-0">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="#">Pages</a></li>
+                        <li class="breadcrumb-item text-dark" aria-current="page">Nikkah_Ceremony</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+
+<!-- Process Section -->
+<div class="container-fluid bg-white py-5">
+    <div class="container">
+        <h2 class="text-center mb-5 display-5 fw-bold" style="color: #368257;">The Nikah Process</h2>
+        
+        <div class="row g-4">
+            <!-- Step 1 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body text-center p-4">
+                        <div class="step-badge bg-primary text-white rounded-circle mb-3 mx-auto">1</div>
+                        <h5 class="fw-bold mb-3">Initial Application</h5>
+                        <p class="text-muted">Complete our online form with basic details</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body text-center p-4">
+                        <div class="step-badge bg-primary text-white rounded-circle mb-3 mx-auto">2</div>
+                        <h5 class="fw-bold mb-3">Documentation Check</h5>
+                        <p class="text-muted">Prepare required Islamic and UK legal documents</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body text-center p-4">
+                        <div class="step-badge bg-primary text-white rounded-circle mb-3 mx-auto">3</div>
+                        <h5 class="fw-bold mb-3">Imam Consultation</h5>
+                        <p class="text-muted">Pre-marital guidance session with our Imam</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="col-md-6 col-lg-3">
+                <div class="card h-100 border-0 shadow-sm hover-effect">
+                    <div class="card-body text-center p-4">
+                        <div class="step-badge bg-primary text-white rounded-circle mb-3 mx-auto">4</div>
+                        <h5 class="fw-bold mb-3">Ceremony Day</h5>
+                        <p class="text-muted">Official Nikah performed with witnesses</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Requirements Section -->
+<div class="container-fluid bg-light py-5" id="requirements">
+    <div class="container">
+        <div class="row g-5">
+            <div class="col-lg-6">
+                <h3 class="mb-4" style="color: #368257;">Required Documents</h3>
+                <div class="bg-white p-4 rounded-3 shadow-sm">
+                    <ul class="list-unstyled">
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                            <span>Valid photo ID (Passport/Driving License)</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                            <span>Proof of address (Utility bill or bank statement)</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                            <span>Civil marriage notice (if applicable)</span>
+                        </li>
+                        <li class="d-flex mb-3">
+                            <i class="fas fa-check-circle text-success me-3 mt-1"></i>
+                            <span>Wali's consent letter (for bride)</span>
+                        </li>
+                    </ul>
+                    <a href="#" class="btn btn-outline-primary">
+                        <i class="fas fa-download me-2"></i>Download Checklist
+                    </a>
+                </div>
+            </div>
+
+            <div class="col-lg-6">
+                <h3 class="mb-4" style="color: #368257;">Islamic Requirements</h3>
+                <div class="accordion" id="islamicConditions">
+                    <!-- Item 1 -->
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#condition1">
+                                Essential Conditions
+                            </button>
+                        </h4>
+                        <div id="condition1" class="accordion-collapse collapse show" data-bs-parent="#islamicConditions">
+                            <div class="accordion-body">
+                                <ul>
+                                    <li>Mutual consent of both parties</li>
+                                    <li>Presence of bride's Wali</li>
+                                    <li>Two Muslim witnesses</li>
+                                    <li>Agreed Mahr (dower)</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="accordion-item">
+                        <h4 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#condition2">
+                                UK Legal Considerations
+                            </button>
+                        </h4>
+                        <div id="condition2" class="accordion-collapse collapse" data-bs-parent="#islamicConditions">
+                            <div class="accordion-body">
+                                <p>While the Nikah is Islamically valid, couples must also register their marriage with 
+                                <a href="https://www.gov.uk/marriages-civil-partnerships" target="_blank">GOV.UK</a> 
+                                for legal recognition in the UK.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form -->
+<div class="container-fluid py-5" id="contact">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-lg">
+                    <div class="card-body p-5">
+                        <h3 class="text-center mb-4" style="color: #368257;">Book Your Nikah Ceremony</h3>
+                        
+                        <form>
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label">Groom's Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Abdullah Khan" required>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label class="form-label">Bride's Full Name</label>
+                                    <input type="text" class="form-control" placeholder="Aisha Ahmed" required>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label class="form-label">Contact Number</label>
+                                    <input type="tel" class="form-control" placeholder="07123 456789" required>
+                                </div>
+                                
+                                <div class="col-md-6">
+                                    <label class="form-label">Preferred Date</label>
+                                    <input type="date" class="form-control" required>
+                                </div>
+                                
+                                <div class="col-12">
+                                    <label class="form-label">Special Requests</label>
+                                    <textarea class="form-control" rows="3" placeholder="Any cultural traditions or specific requirements"></textarea>
+                                </div>
+                                
+                                <div class="col-12 text-center mt-4">
+                                    <button type="submit" class="btn btn-primary px-5 py-2">
+                                        Submit Application <i class="fas fa-paper-plane ms-2"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+
+
+.step-badge {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hover-effect {
+    transition: transform 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: translateY(-5px);
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #368257;
+    color: white;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+</style>
+
+{% endblock %}

@@ -1,99 +1,84 @@
 from django.db import models
 
-# 1️⃣ Hero Section
-class HeroSection(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Main Title")
-    subtitle = models.CharField(max_length=255, blank=True, null=True, verbose_name="Subtitle")
-    background_image = models.ImageField(upload_to="uploads/hero/", verbose_name="Background Image")
-
-    def __str__(self):
-        return self.title
-
-# 2️⃣ About Section
-class AboutSection(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Section Title")
-    content = models.TextField(verbose_name="Content")
-    image = models.ImageField(upload_to="uploads/about/", blank=True, null=True, verbose_name="Image")
-
-    def __str__(self):
-        return self.title
-
-# 3️⃣ Activities Section
-class Activity(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Activity Title")
-    description = models.TextField(verbose_name="Activity Description")
-    image = models.ImageField(upload_to="uploads/activities/", blank=True, null=True, verbose_name="Image")
-
-    def __str__(self):
-        return self.title
-
-# 4️⃣ Events Section
-class Event(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Event Title")
-    description = models.TextField(verbose_name="Event Description")
-    date = models.DateTimeField(verbose_name="Event Date")
-    image = models.ImageField(upload_to="uploads/events/", blank=True, null=True, verbose_name="Image")
-
-    def __str__(self):
-        return self.title
-
-# 5️⃣ Sermons (e.g., Friday Khutbah)
-class Sermon(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Sermon Title")
-    speaker = models.CharField(max_length=255, verbose_name="Speaker Name")
-    date = models.DateTimeField(verbose_name="Sermon Date")
-    audio_file = models.FileField(upload_to="uploads/sermons/", blank=True, null=True, verbose_name="Audio File")
-    description = models.TextField(verbose_name="Sermon Description")
-
-    def __str__(self):
-        return f"{self.title} - {self.speaker}"
-
-# 6️⃣ Blog Section
-class BlogPost(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Blog Title")
-    content = models.TextField(verbose_name="Content")
-    author = models.CharField(max_length=255, verbose_name="Author")
-    published_at = models.DateTimeField(auto_now_add=True, verbose_name="Published Date")
-    image = models.ImageField(upload_to="uploads/blog/", blank=True, null=True, verbose_name="Image")
-
-    def __str__(self):
-        return self.title
-
-# 7️⃣ Team Members
-class TeamMember(models.Model):
-    name = models.CharField(max_length=255, verbose_name="Name")
-    role = models.CharField(max_length=255, verbose_name="Role/Position")
-    image = models.ImageField(upload_to="uploads/team/", blank=True, null=True, verbose_name="Profile Image")
-    bio = models.TextField(verbose_name="Short Bio")
-
-    def __str__(self):
-        return self.name
-
-# 8️⃣ Testimonials
-class Testimonial(models.Model):
-    name = models.CharField(max_length=255, verbose_name="Person's Name")
-    feedback = models.TextField(verbose_name="Testimonial / Feedback")
-    image = models.ImageField(upload_to="uploads/testimonials/", blank=True, null=True, verbose_name="Image (Optional)")
-
-    def __str__(self):
-        return self.name
-
-    
-# 9️⃣ Topbar / Header 
 class Header(models.Model):
-    phone_number = models.CharField(max_length=20, blank=True, null=True, verbose_name="Phone Number")
-    email = models.EmailField(blank=True, null=True, verbose_name="Email Address")
+    phone = models.CharField(
+        max_length=20,
+        verbose_name="Phone Number",
+        help_text="Enter phone number in international format (+XXX...)",
+        default="+0123456789"
+    )
+    
+    email = models.EmailField(
+        verbose_name="Email Address",
+        default="info@example.com"
+    )
+    
+    facebook_url = models.URLField(
+        verbose_name="Facebook URL",
+        blank=True,
+        null=True
+    )
+    
+    twitter_url = models.URLField(
+        verbose_name="Twitter URL",
+        blank=True,
+        null=True
+    )
+    
+    linkedin_url = models.URLField(
+        verbose_name="LinkedIn URL",
+        blank=True,
+        null=True
+    )
+    
+    instagram_url = models.URLField(
+        verbose_name="Instagram URL",
+        blank=True,
+        null=True
+    )
+    
+    signup_url = models.URLField(
+        verbose_name="Signup/Login URL",
+        blank=True,
+        null=True,
+        default="/auth/login",
+        help_text="Leave empty to hide signup link"
+    )
+
+    class Meta:
+        verbose_name = "Header Settings"
+        verbose_name_plural = "Header Settings"
 
     def __str__(self):
-        return "Website Topbar Settings"
+        return "Header Configuration"
     
 
-# Navbar 
-class NavbarItem(models.Model):
-    title = models.CharField(max_length=255, verbose_name="Link Name")
-    url = models.CharField(max_length=255, verbose_name="URL")
+class Footer(models.Model):
+    newsletter_title = models.CharField(max_length=100, verbose_name="Newsletter Title")
+    newsletter_description = models.TextField(verbose_name="Newsletter Description")
+    address = models.TextField(verbose_name="Address")
+    phone = models.CharField(max_length=20, verbose_name="Phone Number")
+    map_link = models.URLField(verbose_name="Map Link", blank=True)
+    copyright_text = models.TextField(verbose_name="Copyright Text")
+    design_credit = models.TextField(verbose_name="Design Credit")
+    
+    class Meta:
+        verbose_name = "Footer Settings"
+        verbose_name_plural = "Footer Settings"
+
+    def __str__(self):
+        return "Footer Configuration"
+
+class FooterLink(models.Model):
+    footer = models.ForeignKey(Footer, on_delete=models.CASCADE, related_name="links")
+    title = models.CharField(max_length=50, verbose_name="Link Title")
+    url = models.CharField(max_length=200, verbose_name="Link URL")
+    order = models.PositiveIntegerField(default=0, verbose_name="Order")
+
+    class Meta:
+        verbose_name = "Footer Link"
+        verbose_name_plural = "Footer Links"
+        ordering = ['order']
 
     def __str__(self):
         return self.title
-
-

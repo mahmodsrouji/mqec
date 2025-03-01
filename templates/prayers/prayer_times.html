@@ -1,87 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prayer Times</title>
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_specific_styles %}
+    {% if request.path == '/prayer-times/' %}
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: #333;
-        }
-        table {
-            width: 60%;
-            margin: 0 auto;
-            height: 400px;
-            border-collapse: collapse;
-            background-color: #fff;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        th, td {
-            padding: 12px;
-            text-align: center;
-            border-bottom: 1px solid #ddd;
-        }
-        th {
-            background-color: #f2f2f2;
-            color: green;
-        }
-
-        td:nth-child(1) {
-            color: blue;
-            font-weight: bold; 
-        }
-        
-        td:nth-child(2) {
-            color: red;
-            font-weight: bold; 
-        }
-
-        tr:hover {
-            background-color: #f9f9f9; 
+        .prayer-card {
+            margin-top: 5rem;
+            width: 900px;
         }
     </style>
-</head>
-<body>
-    <h1>Prayer Times in Sheffield, UK</h1>
-    <table>
-        <thead>
-            <tr>
-                <th>Prayer</th>
-                <th>Time</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Fajr</td>
-                <td>{{ timings.Fajr }}</td>
-            </tr>
-            <tr>
-                <td>Dhuhr</td>
-                <td>{{ timings.Dhuhr }}</td>
-            </tr>
-            <tr>
-                <td>Asr</td>
-                <td>{{ timings.Asr }}</td>
-            </tr>
-            <tr>
-                <td>Maghrib</td>
-                <td>{{ timings.Maghrib }}</td>
-            </tr>
-            <tr>
-                <td>Isha</td>
-                <td>{{ timings.Isha }}</td>
-            </tr>
-            <tr>
-                <td>Jumu'ah (Friday Prayer)</td>
-                <td>1:00 PM</td> <!-- Adjust this time as per your mosque's schedule -->
-            </tr>
-        </tbody>
-    </table>
-</body>
-</html>
+    {% endif %}
+{% endblock %}
+
+{% block content %}
+    {% include "prayers/_prayer_times.html" %}
+{% endblock %}
