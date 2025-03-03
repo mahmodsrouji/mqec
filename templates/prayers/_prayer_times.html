@@ -23,6 +23,12 @@
                         <td class="text-center align-middle py-3 prayer-name">Fajr</td>
                         <td class="text-center align-middle py-3 prayer-time">{{ prayer_times.Fajr }}</td>
                     </tr>
+
+                    <tr>
+                        <td class="text-center align-middle py-3 prayer-name">Sunrise</td>
+                        <td class="text-center align-middle py-3 prayer-time">{{ prayer_times.Sunrise }}</td>
+                    </tr>
+
                     <tr>
                         <td class="text-center align-middle py-3 prayer-name">Dhuhr</td>
                         <td class="text-center align-middle py-3 prayer-time">{{ prayer_times.Dhuhr }}</td>
@@ -41,7 +47,7 @@
                     </tr>
                     <tr class="jumuah-row">
                         <td class="text-center align-middle py-3 fw-medium prayer-name">Jumu'ah</td>
-                        <td class="text-center align-middle py-3 fw-medium prayer-time">1:00 PM</td>
+                        <td class="text-center align-middle py-3 fw-medium prayer-time">1:45 PM</td>
                     </tr>
                 </tbody>
             </table>
@@ -117,6 +123,16 @@ tr:hover .prayer-name {
 
 .border-bottom {
     border-bottom: 2px solid #dee2e6 !important;
+}
+
+tr:nth-child(2) { /* صف الشروق */
+    background: #f8fafd;
+    border-top: 2px dashed #e3f2fd;
+    border-bottom: 2px dashed #e3f2fd;
+}
+
+tr:nth-child(2) .prayer-name {
+    color: #54d1ff; /* لون أزرق فاتح */
 }
 
 @media (max-width: 576px) {
